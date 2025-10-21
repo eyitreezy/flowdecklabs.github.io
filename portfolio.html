@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowdeck Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs">
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#institute">Institute</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact us.html" class="contact-btn">Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-menu-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-header-section">
+        <!-- Decorative Circle Top Left -->
+        <div class="decorative-circle top-left">
+            <div class="circle-outer"></div>
+            <div class="circle-middle"></div>
+            <div class="circle-inner"></div>
+        </div>
+        
+        <!-- Decorative Wave Bottom Right -->
+        <div class="decorative-wave">
+            <svg class="wave-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path class="wave-path" d="M20,100 Q40,80 60,100 T100,100 T140,100 T180,100" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+            </svg>
+            <div class="decorative-circle bottom-right">
+                <div class="circle-outer"></div>
+                <div class="circle-middle"></div>
+                <div class="circle-inner"></div>
+            </div>
+        </div>
+        
+        <div class="portfolio-header-container">
+            <!-- Section Header -->
+            <div class="portfolio-header">
+                <div class="dotted-line-left"></div>
+                <h2 class="portfolio-title">Recent Deliveries</h2>
+                <div class="dotted-line-right"></div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="portfolio-section">    
+        <div class="portfolio-container">
+            <!-- Category Tabs -->
+            <div class="portfolio-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="website">Website</button>
+                <button class="tab-btn" data-category="mobile">Mobile Apps</button>
+                <button class="tab-btn" data-category="software">Software</button>
+                <button class="tab-btn" data-category="branding">Branding</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Website Project 1 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/Grown-not-flown.png" alt="Analytics Dashboard">
+                            <div class="portfolio-overlay">
+                                <a href="https://grown-not-flown.com/" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge">Website</span>
+                            <h3 class="portfolio-name">Grown Not Flown</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile App 1 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80" alt="Mobile Calendar App">
+                            <div class="portfolio-overlay">
+                                <a href="/portfolio/calendar-app" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge mobile">Mobile Apps</span>
+                            <h3 class="portfolio-name">Calendar App</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software 1 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/UXProfessional.png" alt="UXProfessional">
+                            <div class="portfolio-overlay">
+                                <a href="https://game.theuxprofessional.com/version-test/registration" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">UX Professional</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software 2 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/Rosy Recruits.png" alt="Rosy Recruits">
+                            <div class="portfolio-overlay">
+                                <a href="https://illyliberty.com/version-live/login_signup?m=login" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">Rosy Recruits</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website 2 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/Teachoutbuilders.png" alt="Body Building Platform">
+                            <div class="portfolio-overlay">
+                                <a href="https://www.teachoutbuilders.com" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge">Website</span>
+                            <h3 class="portfolio-name">Teach Out Builders</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Branding 1 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Restaurant Branding">
+                            <div class="portfolio-overlay">
+                                <a href="/portfolio/restaurant-branding" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge branding">Branding</span>
+                            <h3 class="portfolio-name">Restaurant Menu Design</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile App 2 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=500&q=80" alt="Fitness Tracker App">
+                            <div class="portfolio-overlay">
+                                <a href="/portfolio/fitness-app" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge mobile">Mobile Apps</span>
+                            <h3 class="portfolio-name">Fitness Tracker</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Branding 2 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=80" alt="Food Photography">
+                            <div class="portfolio-overlay">
+                                <a href="/portfolio/food-photography" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge branding">Branding</span>
+                            <h3 class="portfolio-name">Food Photography</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Website 3 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/sportbodywork.png" alt="sportbodywork">
+                            <div class="portfolio-overlay">
+                                <a href="https://www.sportbodywork.com" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge">Website</span>
+                            <h3 class="portfolio-name">Sportbodywork</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Branding 3 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Food Menu Design">
+                            <div class="portfolio-overlay">
+                                <a href="/portfolio/menu-design" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge branding">Branding</span>
+                            <h3 class="portfolio-name">Gourmet Menu</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile App 3 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=500&q=80" alt="Social Media App">
+                            <div class="portfolio-overlay">
+                                <a href="/portfolio/social-app" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge mobile">Mobile Apps</span>
+                            <h3 class="portfolio-name">Social Connect</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software 3 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/FraimCPA.png" alt="Project Management">
+                            <div class="portfolio-overlay">
+                                <a href="https://faq.fraimcpa.com/" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">Fraimcpa</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software 4 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/Grown Not Flown App.png" alt="Grown Not Flown">
+                            <div class="portfolio-overlay">
+                                <a href="https://grown-not-flown.com/search" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">Grown Not Flown</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software 5 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/Coral Care.png" alt="Coral Care">
+                            <div class="portfolio-overlay">
+                                <a href="https://app.joincoralcare.com/login?m=login" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">Coral Care</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software 6 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/crystal-cat-exchange.png" alt="Crystal Cat Exchange">
+                            <div class="portfolio-overlay">
+                                <a href="https://fundraising.sunokafruit.com/login" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">Crystal Cat Exchange</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software 7 -->
+                <div class="portfolio-item" data-category="software">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/Stratlas.png" alt="Stratlas">
+                            <div class="portfolio-overlay">
+                                <a href="https://stratlas.io/" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge software">Software</span>
+                            <h3 class="portfolio-name">Stratlas</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Website 4 -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="image/mitchwilder.png" alt="mitchwilder">
+                            <div class="portfolio-overlay">
+                                <a href="https://www.mitchwilder.com/" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-badge">Website</span>
+                            <h3 class="portfolio-name">Mitch Wilder</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+     <section class="contact-cta">
+        <div class="border-line top-line"></div>
+        
+        <div class="cta-container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <p class="cta-question">Have any question about us?</p>
+                    <p class="cta-message">Don't hesitate to contact us</p>
+                </div>
+                
+                <div class="cta-button-wrapper">
+                    <a href="contact us.html" class="cta-button">Contact us</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-line bottom-line"></div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and Social Media Section -->
+            <div class="footer-column">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="image/Flowdecklabs Footer Logo.png" alt="Flowdecklabs" width="95" height="95">
+                        </div>
+                        <!-- <span class="logo-text">FLOWDECK LABS</span> -->
+                    </div>
+                    <div class="footer-paragraph">
+                        Flowdeck Labs builds apps, software, and brands, delivering digital solutions and training that help businesses grow and talents thrive.
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter/X">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Discover</h3>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Institute</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Our Work</h3>
+                    <ul class="footer-list">
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Connect</h3>
+                    <ul class="footer-list">
+                        <li><a href="contact us.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">All rights reserved © 2025 Flowdeck Labs</p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Privacy</a>
+                        <a href="#" class="footer-bottom-link">Terms</a>
+                        <a href="#" class="footer-bottom-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      <script src="script.js"></script>
+
+</body>
+</html>
