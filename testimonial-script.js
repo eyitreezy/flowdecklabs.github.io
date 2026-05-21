@@ -307,7 +307,7 @@ Review Type: ${reviewType.toUpperCase()}
         newCard.className = `testimonial-card ${type === 'video' ? 'video-card' : ''}`;
         newCard.setAttribute('data-type', type);
 
-        const avatar = `https://i.pravatar.cc/150?img=${Math.floor(Math.random() * 70)}`;
+        const avatar = "image/About-Us.avif";
         const date = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 
         newCard.innerHTML = `

@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowdeck Labs</title>
+    <title>About Us — Flowdeck Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Sticky Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs">
+                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs" width="320" height="72" decoding="async">
             </div>
-            
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#institute">Institute</a></li>
+                <li><a href="index.html#institute">Institute</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact us.html" class="contact-btn">Contact Us</a></li>
@@ -32,236 +34,272 @@
             </div>
         </div>
     </nav>
-    <section class="about-hero">
-        <div class="about-hero-overlay"></div>
-        <div class="about-hero-container">
-            <h1 class="about-hero-title">About Us</h1>
+
+    <section class="about-masthead" id="about-intro" aria-labelledby="about-hero-heading">
+        <div class="about-masthead__ambient" aria-hidden="true"></div>
+        <div class="about-masthead__inner">
+            <div class="about-masthead__grid">
+                <div class="about-masthead__main">
+                    <nav class="about-masthead__crumb" aria-label="You are here">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li aria-current="page">About</li>
+                        </ol>
+                    </nav>
+
+                    <p class="about-masthead__eyebrow js-reveal">Inside the lab</p>
+
+                    <h1 class="about-masthead__title js-reveal" id="about-hero-heading">
+                        <span class="about-masthead__title-pre">A studio for</span>
+                        <span class="about-masthead__title-em">products, people,</span>
+                        <span class="about-masthead__title-pre">and lasting impact.</span>
+                    </h1>
+
+                    <p class="about-masthead__lead js-reveal">
+                        We partner with teams who need more than deliverables—strategy, design, engineering, and training in one place, so you can ship with confidence and grow the talent around you.
+                    </p>
+                </div>
+
+                <aside class="about-masthead__rail" aria-label="At a glance">
+                    <p class="about-masthead__rail-label">At a glance</p>
+                    <ul class="about-masthead__pillars js-reveal" role="list">
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Where</span>
+                            <span class="about-masthead__pillar-value">Lagos &amp; remote</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">How</span>
+                            <span class="about-masthead__pillar-value">Strategy → ship</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Why</span>
+                            <span class="about-masthead__pillar-value">Products &amp; academy</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div class="about-masthead__actions js-reveal">
+                <a href="services.html" class="btn-primary about-masthead__btn">Explore services</a>
+                <a href="contact us.html" class="btn-secondary about-masthead__btn about-masthead__btn--ghost">Contact us</a>
+            </div>
         </div>
     </section>
 
-     <!-- About Text Section -->
-    <section class="about-text-section">
-        <div class="about-text-container">
-            <h2 class="about-main-heading">
-                At Flowdeck Labs, we are more than a tech company, we are a product innovation hub committed to turning bold ideas into impactful digital solutions.
-            </h2>
-            
+    <!-- Story (index-style split section) -->
+    <section class="about-section" id="our-story" aria-labelledby="story-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/About-Us.avif" alt="Flowdeck Labs team at work" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
             <div class="about-content">
-                <p class="about-paragraph">
+                <p class="about-eyebrow js-reveal">Our story</p>
+                <h2 class="about-title js-reveal" id="story-heading">More than a tech company</h2>
+                <h3 class="about-subtitle js-reveal">
+                    A product innovation hub committed to turning bold ideas into <span class="about-subtitle-accent">impactful digital solutions</span>.
+                </h3>
+                <p class="about-description js-reveal">
                     Flowdeck Labs is a product innovation company helping brands and individuals bring ideas to life through websites, web apps, and mobile applications. Based in Nigeria with a global outlook, we deliver digital solutions that inspire trust and drive sustainable growth.
                 </p>
-                
-                <p class="about-paragraph">
-                    Beyond building products, we are passionate about training the next generation of tech talent. Through our Product Management Institute and bootcamps, we equip young professionals with hands-on skills in design, development, and product management, preparing them to thrive in today's digital economy.
+                <p class="about-description js-reveal">
+                    Beyond building products, we are passionate about training the next generation of tech talent. Through our Product Management Institute and bootcamps, we equip young professionals with hands-on skills in design, development, and product management, preparing them to thrive in today&apos;s digital economy.
                 </p>
-                
-                <p class="about-paragraph">
+                <p class="about-description js-reveal">
                     With a team of subject matter experts, proven processes, and a results-driven approach, Flowdeck Labs stands as a trusted partner for clients, partners, and talents seeking to innovate, scale, and succeed.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Who We Are Section -->
-    <section class="who-we-are">
-        <div class="who-we-are-container">
-            <div class="content-wrapper">
-                <div class="image-container">
-                    <div class="image-frame">
-                        <img src="image/who-we-are-new.jpg" alt="Who we are">
-                        <div class="image-overlay"></div>
-                    </div>
+    <section class="about-section about-section--alt" aria-labelledby="who-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/who-we-are-new.jpg" alt="Who we are — strategy, design, and technology" loading="lazy" width="900" height="700">
                 </div>
-                
-                <div class="text-container">
-                    <h2 class="section-title">Who We Are</h2>
-                    <p class="section-description">
-                        Flowdeck Labs is a product innovation lab where strategy, design, and technology meet. We transform bold ideas into impactful digital products, helping brands and individuals build scalable web apps, mobile apps, and software that inspire trust and drive growth.
-                    </p>
-                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Identity</p>
+                <h2 class="about-title js-reveal" id="who-heading">Who we are</h2>
+                <p class="about-description js-reveal">
+                    Flowdeck Labs is a product innovation lab where strategy, design, and technology meet. We transform bold ideas into impactful digital products, helping brands and individuals build scalable web apps, mobile apps, and software that inspire trust and drive growth.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Our Vision Section -->
-    <section class="our-vision">
-        <div class="our-vision-container">
-            <div class="content-wrapper">
-                <div class="text-container">
-                    <h2 class="section-title">Our Vision</h2>
-                    <p class="section-description">
-                        Flowdeck Labs envisions a future where African innovation drives global progress. We aim to be the leading hub for transformative digital products,creating technology that empowers businesses, elevates everyday experiences, and inspires trust across industries and borders.
-                    </p>
+    <section class="about-section about-section--reverse about-section--alt" aria-labelledby="vision-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--right">
+                <div class="about-media">
+                    <img src="image/our-vission-new.jpg" alt="Our vision for African innovation" loading="lazy" width="900" height="700">
                 </div>
-                
-                <div class="image-container">
-                    <div class="image-frame">
-                        <img src="image/our-vission-new.jpg" alt="Our Vision">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Direction</p>
+                <h2 class="about-title js-reveal" id="vision-heading">Our vision</h2>
+                <p class="about-description js-reveal">
+                    Flowdeck Labs envisions a future where African innovation drives global progress. We aim to be the leading hub for transformative digital products, creating technology that empowers businesses, elevates everyday experiences, and inspires trust across industries and borders.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Our Mission Section -->
-    <section class="our-mission">
-        <div class="our-mission-container">
-            <div class="content-wrapper">
-                <div class="image-container">
-                    <div class="image-frame">
-                        <img src="image/our-mission.png" alt="Our Mission">
-                        <div class="image-overlay"></div>
-                    </div>
+    <section class="about-section" aria-labelledby="mission-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/our-mission.png" alt="Our mission — shipping market-ready solutions" loading="lazy" width="900" height="700">
                 </div>
-                <div class="text-container">
-                    <h2 class="section-title">Our Mission</h2>
-                    <p class="section-description">
-                    Our mission is to help brands and individuals turn ambitious ideas into market-ready solutions. Through expert product design, agile development, and hands-on training, we build scalable websites, mobile apps, and software that deliver measurable growth and lasting impact.                    </p>
-                </div>
-                
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Commitment</p>
+                <h2 class="about-title js-reveal" id="mission-heading">Our mission</h2>
+                <p class="about-description js-reveal">
+                    Our mission is to help brands and individuals turn ambitious ideas into market-ready solutions. Through expert product design, agile development, and hands-on training, we build scalable websites, mobile apps, and software that deliver measurable growth and lasting impact.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Meet The Tean-->
-    <section class="meet-team">
+    <!-- Team (services-style header + cards) -->
+    <section class="meet-team" aria-labelledby="team-heading">
         <div class="meet-team-container">
-            <h2 class="team-title">Meet The Team</h2>
-            <p class="team-subtitle">The brilliant minds turning bold ideas into powerful digital products.</p>
-            
+            <header class="services-header about-team__header">
+                <p class="services-eyebrow js-reveal">People</p>
+                <h2 class="services-title js-reveal" id="team-heading">Meet the team</h2>
+                <p class="services-description js-reveal">
+                    The minds turning bold ideas into powerful digital products—strategy, design, and engineering under one roof.
+                </p>
+            </header>
+
             <div class="team-grid">
-                <div class="team-card">
+                <article class="team-card js-reveal">
                     <div class="team-image">
-                        <img src="image/Olumuyiwa.jpg" alt="David Onasanya">
-                        <div class="image-overlay"></div>
+                        <img src="image/Olumuyiwa.jpg" alt="David Onasanya" loading="lazy" width="400" height="400">
+                        <div class="image-overlay" aria-hidden="true"></div>
                     </div>
                     <div class="team-info">
-                        <div class="social-links">
-                            <a href="#" class="social-icon" aria-label="LinkedIn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icon" aria-label="Twitter">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icon" aria-label="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg>
-                            </a>
-                        </div>
                         <h3 class="team-name">David Onasanya</h3>
                         <p class="team-role">Product Manager</p>
-                    </div>
-                </div>
-
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="image/Yetunde.jpg" alt="Elizabeth Ojajuni">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="team-info">
                         <div class="social-links">
-                            <a href="#" class="social-icon" aria-label="LinkedIn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <a href="#" class="social-icon" aria-label="LinkedIn — David Onasanya">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
                                     <circle cx="4" cy="4" r="2"></circle>
                                 </svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="Twitter">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <a href="#" class="social-icon" aria-label="Twitter — David Onasanya">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                                 </svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <a href="#" class="social-icon" aria-label="Instagram — David Onasanya">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                                 </svg>
                             </a>
                         </div>
+                    </div>
+                </article>
+
+                <article class="team-card js-reveal">
+                    <div class="team-image">
+                        <img src="image/Yetunde.jpg" alt="Elizabeth Ojajuni" loading="lazy" width="400" height="400">
+                        <div class="image-overlay" aria-hidden="true"></div>
+                    </div>
+                    <div class="team-info">
                         <h3 class="team-name">Elizabeth Ojajuni</h3>
                         <p class="team-role">Product Designer</p>
-                    </div>
-                </div>
-
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="image/Eyitope.jpg" alt="Daniel Asegbeloyin">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="team-info">
                         <div class="social-links">
-                            <a href="#" class="social-icon" aria-label="LinkedIn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <a href="#" class="social-icon" aria-label="LinkedIn — Elizabeth Ojajuni">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
                                     <circle cx="4" cy="4" r="2"></circle>
                                 </svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="Twitter">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <a href="#" class="social-icon" aria-label="Twitter — Elizabeth Ojajuni">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                                 </svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <a href="#" class="social-icon" aria-label="Instagram — Elizabeth Ojajuni">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                                 </svg>
                             </a>
                         </div>
+                    </div>
+                </article>
+
+                <article class="team-card js-reveal">
+                    <div class="team-image">
+                        <img src="image/Eyitope.jpg" alt="Daniel Asegbeloyin" loading="lazy" width="400" height="400">
+                        <div class="image-overlay" aria-hidden="true"></div>
+                    </div>
+                    <div class="team-info">
                         <h3 class="team-name">Daniel Asegbeloyin</h3>
                         <p class="team-role">Developer</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="LinkedIn — Daniel Asegbeloyin">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter — Daniel Asegbeloyin">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram — Daniel Asegbeloyin">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact CTA -->
-     <section class="contact-cta">
-        <div class="border-line top-line"></div>
-        
+    <section class="contact-cta about-page-cta" aria-labelledby="about-cta-heading">
         <div class="cta-container">
             <div class="cta-content">
-                <div class="cta-text">
-                    <p class="cta-question">Have any question about us?</p>
-                    <p class="cta-message">Don't hesitate to contact us</p>
+                <div class="cta-text js-reveal">
+                    <p class="cta-question" id="about-cta-heading">Questions about working with us?</p>
+                    <p class="cta-message">We&apos;d love to hear what you&apos;re building—or how we can help you grow.</p>
                 </div>
-                
-                <div class="cta-button-wrapper">
+                <div class="cta-button-wrapper js-reveal">
                     <a href="contact us.html" class="cta-button">Contact us</a>
                 </div>
             </div>
         </div>
-        
-        <div class="border-line bottom-line"></div>
     </section>
 
-    <!--Footer-->
     <footer class="footer">
         <div class="footer-container">
-            <!-- Logo and Social Media Section -->
             <div class="footer-column">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="image/Flowdecklabs Footer Logo.png" alt="Flowdecklabs" width="95" height="95">
+                    <a href="index.html" class="footer-logo-link" aria-label="Flowdeck Labs home">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="image/Flowdecklabs Logo.svg" alt="" width="88" height="88" decoding="async">
+                            </div>
                         </div>
-                        <!-- <span class="logo-text">FLOWDECK LABS</span> -->
-                    </div>
+                    </a>
                     <div class="footer-paragraph">
                         Flowdeck Labs builds apps, software, and brands, delivering digital solutions and training that help businesses grow and talents thrive.
                     </div>
@@ -294,16 +332,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Footer Links -->
             <div class="footer-links">
                 <div class="footer-column">
                     <h3 class="footer-heading">Discover</h3>
                     <ul class="footer-list">
                         <li><a href="about.html" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Institute</a></li>
+                        <li><a href="index.html#institute" class="footer-link">Institute</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3 class="footer-heading">Our Work</h3>
                     <ul class="footer-list">
@@ -312,7 +348,6 @@
                         <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3 class="footer-heading">Connect</h3>
                     <ul class="footer-list">
@@ -321,11 +356,10 @@
                 </div>
             </div>
         </div>
-        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="footer-container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">All rights reserved © 2025 Flowdeck Labs</p>
+                    <p class="copyright">All rights reserved © 2026 Flowdeck Labs</p>
                     <div class="footer-bottom-links">
                         <a href="#" class="footer-bottom-link">Privacy</a>
                         <a href="#" class="footer-bottom-link">Terms</a>
@@ -336,7 +370,7 @@
         </div>
     </footer>
 
-      <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

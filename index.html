@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowdeck Labs</title>
+    <title>Home — Flowdeck Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,7 +15,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs">
+                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs" width="320" height="72" decoding="async">
             </div>
             
             <ul class="nav-links" id="navLinks">
@@ -37,63 +40,95 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="fade-in">
-                    Where Ideas<br>
-                    Become <span class="highlight">Products</span><br>
-                    and People<br>
-                    Become <span class="highlight">Experts</span>.
+                <p class="hero-badge fade-in" role="status">
+                    <span class="hero-badge-dot" aria-hidden="true"></span>
+                    Product studio &amp; academy · Lagos &amp; remote
+                </p>
+                <h1 class="hero-headline fade-in delay-1">
+                    Where ideas become <span class="highlight">products</span><br>
+                    and people become <span class="highlight">experts</span>.
                 </h1>
                 
-                <p class="fade-in delay-1">
-                    At Flowdeck Labs, we are subject matter experts dedicated to designing, building, and scaling digital products that inspire trust and drive sustainable growth.
+                <p class="hero-lead fade-in delay-2">
+                    Flowdeck Labs helps teams ship trusted digital products: strategy through launch with experts in design, build, and growth.
                 </p>
                 
-                <div class="hero-buttons fade-in delay-2">
-                    <a href="services.html" class="btn-primary">Work with us</a>
-                    <a href="#institute" class="btn-secondary">Join Our Bootcamp</a>
+                <div class="hero-buttons fade-in delay-3">
+                    <a href="services.html" class="btn-primary hero-cta-primary">Work with us</a>
+                    <a href="#institute" class="btn-secondary hero-cta-secondary">Join our bootcamp</a>
                 </div>
             </div>
         </div>
         
-        <div class="hero-image fade-in delay-3">
-            <img src="image/index banner 1.avif" alt="Team collaboration at whiteboard - Where ideas become products">
+        <figure class="hero-figure">
+            <div class="hero-image">
+                <img src="image/index banner 1.avif" alt="Team collaboration at whiteboard - Where ideas become products" width="900" height="1100" fetchpriority="high">
+            </div>
+        </figure>
+    </section>
+
+    <section class="culture-strip" aria-labelledby="culture-heading">
+        <div class="culture-strip-inner">
+            <header class="culture-strip-header">
+                <p class="culture-eyebrow js-reveal" id="culture-heading">Inside the lab</p>
+                <h2 class="culture-title js-reveal">Strategy, craft, and delivery—the way we work with teams every day.</h2>
+            </header>
+            <div class="culture-grid">
+                <div class="culture-cell js-reveal js-reveal--scale">
+                    <img src="image/Service Sect 1.jpg" alt="Flowdeck Labs — workshop and strategy session" loading="lazy" width="600" height="450">
+                </div>
+                <div class="culture-cell js-reveal js-reveal--scale">
+                    <img src="image/Service Sect 2.jpg" alt="Flowdeck Labs — product design collaboration" loading="lazy" width="600" height="450">
+                </div>
+                <div class="culture-cell js-reveal js-reveal--scale">
+                    <img src="image/Service Sect 3.png" alt="Flowdeck Labs — development and shipping" loading="lazy" width="600" height="450">
+                </div>
+                <div class="culture-cell js-reveal js-reveal--scale">
+                    <img src="image/Service Sect 4.jpg" alt="Flowdeck Labs — training and mentorship" loading="lazy" width="600" height="450">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Add some content below to demonstrate sticky navbar -->
-    <section class="about-section">
+    <section class="about-section" id="about" aria-labelledby="about-heading">
         <div class="about-container">
-            <div class="about-image">
-                <img src="image/About-Us.avif" alt="Team collaboration at Flowdeck Labs">
-            </div>
-            
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/About-Us.avif" alt="Team collaboration at Flowdeck Labs" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+
             <div class="about-content">
-                <h2 class="about-title">About Us</h2>
-                <h3 class="about-subtitle">At Flowdeck Labs, We Build Products and People</h3>
-                
-                <p class="about-description">
+                <p class="about-eyebrow js-reveal">Inside the lab</p>
+                <h2 class="about-title js-reveal" id="about-heading">About Us</h2>
+                <h3 class="about-subtitle js-reveal">
+                    At Flowdeck Labs, we build <span class="about-subtitle-accent">products and people</span>
+                </h3>
+
+                <p class="about-description js-reveal">
                     Flowdeck Labs is a product innovation company that designs, builds, and scales digital solutions from websites and mobile apps to software and e-commerce. Alongside our services in design and development, we invest in people through our Product Management Institute and bootcamps, training the next generation of tech leaders.
                 </p>
-                
-                <button class="discover-btn" onclick="window.location.href='about.html'">Discover More</button>
+
+                <a href="about.html" class="discover-btn js-reveal">Discover More</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <section class="services-section" id="services" aria-labelledby="services-heading">
         <div class="services-container">
             <div class="services-header">
-                <h2 class="services-title">Services</h2>
-                <p class="services-description">
-                    We provide end-to-end digital solutions, innovation consulting, and 
-                    training programs designed to help businesses and people grow.
+                <p class="services-eyebrow js-reveal">What we deliver</p>
+                <h2 class="services-title js-reveal" id="services-heading">Services</h2>
+                <p class="services-description js-reveal">
+                    End-to-end digital solutions, innovation consulting, and training programs—built to help businesses and people grow.
                 </p>
             </div>
             
             <div class="services-grid">
                 <!-- Website Card -->
-                <div class="service-card">
+                <div class="service-card js-reveal">
                     <div class="service-icon">
                         <i class="fas fa-globe"></i>
                     </div>
@@ -101,11 +136,11 @@
                     <p class="service-description">
                         Build secure and scalable web applications tailored to your business needs.
                     </p>
-                    <a href="services.html" class="read-more">Read More</a>
+                    <a href="services.html" class="read-more"><span class="read-more__text">Read more</span></a>
                 </div>
                 
                 <!-- Mobile Apps Card -->
-                <div class="service-card">
+                <div class="service-card js-reveal">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
@@ -113,11 +148,11 @@
                     <p class="service-description">
                         Deliver engaging mobile experiences with intuitive, high-performing apps.
                     </p>
-                    <a href="services.html" class="read-more">Read More</a>
+                    <a href="services.html" class="read-more"><span class="read-more__text">Read more</span></a>
                 </div>
                 
                 <!-- Software Development Card -->
-                <div class="service-card">
+                <div class="service-card js-reveal">
                     <div class="service-icon">
                         <i class="fas fa-desktop"></i>
                     </div>
@@ -125,11 +160,11 @@
                     <p class="service-description">
                         Custom software solutions designed to solve complex business challenges.
                     </p>
-                    <a href="services.html" class="read-more">Read More</a>
+                    <a href="services.html" class="read-more"><span class="read-more__text">Read more</span></a>
                 </div>
                 
                 <!-- Ecommerce Card -->
-                <div class="service-card">
+                <div class="service-card js-reveal">
                     <div class="service-icon">
                         <i class="fas fa-shopping-bag"></i>
                     </div>
@@ -137,11 +172,11 @@
                     <p class="service-description">
                         End-to-end e-commerce solutions for businesses of all sizes.
                     </p>
-                    <a href="services.html" class="read-more">Read More</a>
+                    <a href="services.html" class="read-more"><span class="read-more__text">Read more</span></a>
                 </div>
                 
                 <!-- Classes/Bootcamps Card -->
-                <div class="service-card">
+                <div class="service-card js-reveal">
                     <div class="service-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -149,11 +184,11 @@
                     <p class="service-description">
                         Upskill with hands-on training in design, development, and product management.
                     </p>
-                    <a href="services.html" class="read-more">Read More</a>
+                    <a href="services.html" class="read-more"><span class="read-more__text">Read more</span></a>
                 </div>
                 
                 <!-- Brand Design Card -->
-                <div class="service-card">
+                <div class="service-card js-reveal">
                     <div class="service-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
@@ -161,56 +196,79 @@
                     <p class="service-description">
                         Create a brand identity that connects and inspires.
                     </p>
-                    <a href="services.html" class="read-more">Read More</a>
+                    <a href="services.html" class="read-more"><span class="read-more__text">Read more</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Institute Section -->
-    <section class="institute-section">
-        <div class="institute-container">
-            <div class="institute-content">
-                <h2 class="institute-title">Institute</h2>
-                <h3 class="institute-subtitle">Product Management Institute</h3>
-                
-                <h4 class="academy-title">Flowlites Academy</h4>
-                
-                <p class="institute-description">
-                    Flowlite Academy is the training arm of Flowdeck Labs, 
-                    built to groom the next wave of tech leaders in Nigeria 
-                    and beyond. We run practical programs in product 
-                    design, product management, and no-code development, 
-                    combining expert mentorship with real projects. Our 
-                    bootcamps, internships, and flexible courses equip 
-                    beginners and professionals with job-ready skills and 
-                    clear career paths. Whether starting out or advancing 
-                    your expertise, Flowlite Academy gives you the tools, 
-                    guidance, and community to thrive in today's digital world.
-                </p>
-                
-                <button class="apply-btn">Apply Now</button>
+    <section class="stats-band" id="stats" aria-label="Flowdeck Labs at a glance">
+        <div class="stats-band__veil" aria-hidden="true"></div>
+        <div class="stats-band-inner">
+            <div class="stat-item js-reveal" aria-label="Over 120 launches and iterations shipped">
+                <strong class="stat-figure">
+                    <span class="stat-figure__num" data-count-to="120">120</span><span class="stat-figure__suffix" aria-hidden="true">+</span>
+                </strong>
+                <span class="stat-label">Launches &amp; iterations shipped</span>
             </div>
-            
-            <div class="institute-image">
-                <img src="image/3ea2032e261b81b7598ee2b3118f7d9e78c4d94c.jpg" alt="Students learning at Flowlite Academy">
+            <div class="stat-item js-reveal" aria-label="Over 15 industries partnered with">
+                <strong class="stat-figure">
+                    <span class="stat-figure__num" data-count-to="15">15</span><span class="stat-figure__suffix" aria-hidden="true">+</span>
+                </strong>
+                <span class="stat-label">Industries partnered with</span>
+            </div>
+            <div class="stat-item js-reveal" aria-label="Typical product timelines 4 to 12 weeks">
+                <strong class="stat-figure stat-figure--range">
+                    <span class="stat-figure__num" data-count-to="4">4</span><span class="stat-figure__dash" aria-hidden="true">–</span><span class="stat-figure__num" data-count-to="12">12</span><span class="stat-figure__suffix stat-figure__suffix--tight" aria-hidden="true">&nbsp;wks</span>
+                </strong>
+                <span class="stat-label">Typical product timelines</span>
+            </div>
+            <div class="stat-item js-reveal" aria-label="100 percent dedicated product and engineering craft">
+                <strong class="stat-figure">
+                    <span class="stat-figure__num" data-count-to="100">100</span><span class="stat-figure__suffix" aria-hidden="true">%</span>
+                </strong>
+                <span class="stat-label">Dedicated product &amp; engineering craft</span>
             </div>
         </div>
     </section>
 
+<!-- Institute Section -->
+    <section class="institute-section" id="institute" aria-labelledby="institute-heading">
+        <div class="institute-container">
+            <div class="institute-content">
+                <p class="institute-eyebrow js-reveal">Training &amp; talent</p>
+                <h2 class="institute-title js-reveal" id="institute-heading">Institute</h2>
+                <p class="institute-subtitle js-reveal">Product Management Institute</p>
+                <p class="institute-academy js-reveal">
+                    <span class="institute-academy__name">Flowlites Academy</span>
+                </p>
+                <p class="institute-description js-reveal">
+                    Flowlite Academy is the training arm of Flowdeck Labs, built to grow the next wave of tech leaders in Nigeria and beyond. Practical programs in product design, product management, and no-code development combine expert mentorship with real projects. Bootcamps, internships, and flexible courses equip beginners and professionals with job-ready skills and clear career paths—whether you are starting out or leveling up.
+                </p>
+                <a href="contact us.html" class="apply-btn js-reveal">Apply Now</a>
+            </div>
+            <figure class="institute-figure js-reveal js-reveal--right">
+                <div class="institute-media">
+                    <img src="image/3ea2032e261b81b7598ee2b3118f7d9e78c4d94c.jpg" alt="Students learning at Flowlite Academy" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+        </div>
+    </section>
+
     <!-- Testimonial Section -->
-    <section class="success-stories">
-        <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <p class="section-subtitle">Every project we launch and every talent we train adds a new chapter to our story of growth, creativity, and lasting impact.</p>
-            
-            <div class="carousel-wrapper">
+    <section class="success-stories" id="success-stories" aria-label="Client success stories">
+        <div class="container success-stories__inner">
+            <p class="success-stories__eyebrow js-reveal">Voices from partners</p>
+            <h2 class="section-title js-reveal">Success Stories</h2>
+            <p class="section-subtitle js-reveal">Every project we launch and every talent we train adds a new chapter to our story of growth, creativity, and lasting impact.</p>
+
+            <div class="carousel-wrapper js-reveal" data-marquee="true" data-marquee-speed="42">
                 <div class="carousel-container">
                     <div class="carousel-track" id="carouselTrack">
-                        <div class="story-card active">
+                        <div class="story-card">
                             <div class="card-header">
                                 <div class="avatar">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Adaobi M.">
+                                    <img src="image/Eyitope.jpg" alt="Adaobi M." width="80" height="80" loading="lazy">
                                 </div>
                                 <div class="client-info">
                                     <h3>Adaobi M.</h3>
@@ -226,11 +284,11 @@
                         <div class="story-card">
                             <div class="card-header">
                                 <div class="avatar">
-                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Michael K.">
+                                    <img src="image/Olumuyiwa.jpg" alt="Michael K." width="80" height="80" loading="lazy">
                                 </div>
                                 <div class="client-info">
                                     <h3>Michael K.</h3>
-                                    <p>Michael K. Abuja, Nigeria</p>
+                                    <p>Abuja, Nigeria</p>
                                 </div>
                             </div>
                             <div class="story-content">
@@ -242,7 +300,7 @@
                         <div class="story-card">
                             <div class="card-header">
                                 <div class="avatar">
-                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Grace T.">
+                                    <img src="image/Yetunde.jpg" alt="Grace T." width="80" height="80" loading="lazy">
                                 </div>
                                 <div class="client-info">
                                     <h3>Grace T.</h3>
@@ -258,7 +316,7 @@
                         <div class="story-card">
                             <div class="card-header">
                                 <div class="avatar">
-                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face" alt="James O.">
+                                    <img src="image/mitchwilder.png" alt="James O." width="80" height="80" loading="lazy">
                                 </div>
                                 <div class="client-info">
                                     <h3>James O.</h3>
@@ -274,7 +332,7 @@
                         <div class="story-card">
                             <div class="card-header">
                                 <div class="avatar">
-                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Sarah A.">
+                                    <img src="image/53f9d9d012116b5e9ffdad98a9d97fed9010c91d.jpg" alt="Sarah A." width="80" height="80" loading="lazy">
                                 </div>
                                 <div class="client-info">
                                     <h3>Sarah A.</h3>
@@ -288,15 +346,15 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="carousel-navigation">
-                    <button class="nav-btn prev-btn" id="prevBtn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+
+                <div class="carousel-navigation carousel-navigation--marquee" role="group" aria-label="Testimonial carousel controls">
+                    <button type="button" class="nav-btn prev-btn" id="prevBtn" aria-label="Previous testimonials">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <button class="nav-btn next-btn" id="nextBtn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <button type="button" class="nav-btn next-btn" id="nextBtn" aria-label="Next testimonials">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
@@ -312,62 +370,71 @@
             </div>
 
             <!-- Discover More Button -->
-            <div class="discover-more-container">
+            <div class="discover-more-container js-reveal">
                 <a href="testimonials.html" class="discover-more-btn">Discover More</a>
             </div>
         </div>
     </section>
 
-    <!--FAQ-->
-    <div class="container">
-        <div class="header">
-            <h1 class="main-title">Answers to your top questions</h1>
-            <p class="subtitle">Quick, clear info about our services and training.</p>
+    <!-- FAQ -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+        <div class="container faq-section__shell">
+            <div class="header faq-section__header">
+                <p class="faq-section__eyebrow js-reveal">FAQ</p>
+                <h2 class="main-title js-reveal" id="faq-heading">Answers to your top questions</h2>
+                <p class="subtitle js-reveal">Quick, clear info about our services and training.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item js-reveal">
+                    <div class="faq-item__icon" aria-hidden="true">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="question">What digital solutions do you provide?</h3>
+                    <p class="answer">We deliver websites, mobile apps, software, and e-commerce platforms. We also offer training through our institute and bootcamps.</p>
+                </div>
+
+                <div class="faq-item js-reveal">
+                    <div class="faq-item__icon" aria-hidden="true">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="question">Who is eligible for your bootcamps?</h3>
+                    <p class="answer">Anyone interested in digital skills can join. No experience is needed.</p>
+                </div>
+
+                <div class="faq-item js-reveal">
+                    <div class="faq-item__icon" aria-hidden="true">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3 class="question">How long does a typical project take?</h3>
+                    <p class="answer">Timelines depend on project size. Most are finished in 4–12 weeks, with clear schedules provided.</p>
+                </div>
+
+                <div class="faq-item js-reveal">
+                    <div class="faq-item__icon" aria-hidden="true">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="question">How does your training work?</h3>
+                    <p class="answer">Our programs blend hands-on projects, mentorship, and practical skills for tech and product roles.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-grid">
-            <div class="faq-item">
-                <div class="icon">💻</div>
-                <h2 class="question">What digital solutions do you provide?</h2>
-                <p class="answer">We deliver websites, mobile apps, software, and e-commerce platforms. We also offer training through our institute and bootcamps.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="icon">🎓</div>
-                <h2 class="question">Who is eligible for your bootcamps?</h2>
-                <p class="answer">Anyone interested in digital skills can join. No experience is needed.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="icon">⏱️</div>
-                <h2 class="question">How long does a typical project take?</h2>
-                <p class="answer">Timelines depend on project size. Most are finished in 4–12 weeks, with clear schedules provided.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="icon">🚀</div>
-                <h2 class="question">How does your training work?</h2>
-                <p class="answer">Our programs blend hands-on projects, mentorship, and practical skills for tech and product roles.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Section -->
-     <!-- Portfolio Slider Section -->
-    <section class="portfolio-slider-section">
+    <!-- Portfolio Slider Section -->
+    <section class="portfolio-slider-section" id="portfolio" aria-labelledby="portfolio-heading">
         <div class="portfolio-slider-container">
-            <!-- Header -->
             <div class="portfolio-slider-header">
-                <h2 class="portfolio-slider-title">Portfolio</h2>
-                <h3 class="portfolio-slider-subtitle">Recently completed Projects</h3>
-                <p class="portfolio-slider-description">
+                <p class="portfolio-slider__eyebrow js-reveal">Selected work</p>
+                <h2 class="portfolio-slider-title js-reveal" id="portfolio-heading">Portfolio</h2>
+                <h3 class="portfolio-slider-subtitle js-reveal">Recently completed projects</h3>
+                <p class="portfolio-slider-description js-reveal">
                     A showcase of the digital solutions and products we've designed and developed.
                 </p>
             </div>
-            
-            <!-- Sliding Portfolio -->
-            <div class="slider-wrapper">
-                <div class="slider-track">
+
+            <div class="slider-wrapper js-reveal" data-portfolio-marquee="true" data-marquee-speed="50">
+                <div class="slider-track" id="portfolioMarqueeTrack">
                     <!-- First Set of Cards -->
                     <div class="portfolio-item" data-category="website">
                         <div class="portfolio-card">
@@ -488,73 +555,25 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Duplicate Set for Seamless Loop -->
-                    <div class="portfolio-item" data-category="website">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="image/Grown-not-flown.png" alt="Grown Not Flown">
-                                <div class="portfolio-overlay">
-                                    <a href="https://grown-not-flown.com/" class="view-project" target="_blank">View Project</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <span class="portfolio-badge">Website</span>
-                                <h3 class="portfolio-name">Grown Not Flown</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item" data-category="software">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="image/UXProfessional.png" alt="UX Professional">
-                                <div class="portfolio-overlay">
-                                    <a href="https://game.theuxprofessional.com/version-test/registration" class="view-project" target="_blank">View Project</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <span class="portfolio-badge software">Software</span>
-                                <h3 class="portfolio-name">UX Professional</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item" data-category="software">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="image/Rosy Recruits.png" alt="Rosy Recruits">
-                                <div class="portfolio-overlay">
-                                    <a href="https://illyliberty.com/version-live/login_signup?m=login" class="view-project" target="_blank">View Project</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <span class="portfolio-badge software">Software</span>
-                                <h3 class="portfolio-name">Rosy Recruits</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item" data-category="website">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="image/Teachoutbuilders.png" alt="Teach Out Builders">
-                                <div class="portfolio-overlay">
-                                    <a href="https://www.teachoutbuilders.com" class="view-project" target="_blank">View Project</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <span class="portfolio-badge">Website</span>
-                                <h3 class="portfolio-name">Teach Out Builders</h3>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+
+                <div class="portfolio-slider-nav" role="group" aria-label="Portfolio carousel controls">
+                    <button type="button" class="portfolio-slider-btn" id="portfolioMarqueePrev" aria-label="Previous projects">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="portfolio-slider-btn" id="portfolioMarqueeNext" aria-label="Next projects">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            
+
             <!-- Discover More Button -->
-            <div class="discover-more-container">
-                <a href="/portfolio.html" class="discover-more-btn">Discover More</a>
+            <div class="discover-more-container js-reveal">
+                <a href="portfolio.html" class="discover-more-btn">Discover More</a>
             </div>
         </div>
     </section>
@@ -565,12 +584,14 @@
             <!-- Logo and Social Media Section -->
             <div class="footer-column">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="image/Flowdecklabs Footer Logo.png" alt="Flowdecklabs" width="95" height="95">
+                    <a href="index.html" class="footer-logo-link" aria-label="Flowdeck Labs home">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="image/Flowdecklabs Logo.svg" alt="" width="88" height="88" decoding="async">
+                            </div>
+                            <!-- <span class="logo-text">FLOWDECK LABS</span> -->
                         </div>
-                        <!-- <span class="logo-text">FLOWDECK LABS</span> -->
-                    </div>
+                    </a>
                     <div class="footer-paragraph">
                         Flowdeck Labs builds apps, software, and brands, delivering digital solutions and training that help businesses grow and talents thrive.
                     </div>
@@ -609,7 +630,7 @@
                     <h3 class="footer-heading">Discover</h3>
                     <ul class="footer-list">
                         <li><a href="about.html" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Institute</a></li>
+                        <li><a href="index.html#institute" class="footer-link">Institute</a></li>
                     </ul>
                 </div>
 
@@ -635,7 +656,7 @@
         <div class="footer-bottom">
             <div class="footer-container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">All rights reserved © 2025 Flowdeck Labs</p>
+                    <p class="copyright">All rights reserved © 2026 Flowdeck Labs</p>
                     <div class="footer-bottom-links">
                         <a href="#" class="footer-bottom-link">Privacy</a>
                         <a href="#" class="footer-bottom-link">Terms</a>
@@ -646,6 +667,7 @@
         </div>
     </footer>
 
+      <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
       <script src="script.js"></script>
 
 </body>

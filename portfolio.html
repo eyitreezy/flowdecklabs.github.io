@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowdeck Labs</title>
+    <title>Portfolio — Flowdeck Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="portfolio-page">
     <!-- Sticky Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs">
+                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs" width="320" height="72" decoding="async">
             </div>
             
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#institute">Institute</a></li>
+                <li><a href="index.html#institute">Institute</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact us.html" class="contact-btn">Contact Us</a></li>
@@ -33,37 +36,58 @@
         </div>
     </nav>
 
-    <section class="portfolio-header-section">
-        <!-- Decorative Circle Top Left -->
-        <div class="decorative-circle top-left">
-            <div class="circle-outer"></div>
-            <div class="circle-middle"></div>
-            <div class="circle-inner"></div>
-        </div>
-        
-        <!-- Decorative Wave Bottom Right -->
-        <div class="decorative-wave">
-            <svg class="wave-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path class="wave-path" d="M20,100 Q40,80 60,100 T100,100 T140,100 T180,100" fill="none" stroke="#1e3a8a" stroke-width="3"/>
-            </svg>
-            <div class="decorative-circle bottom-right">
-                <div class="circle-outer"></div>
-                <div class="circle-middle"></div>
-                <div class="circle-inner"></div>
+    <section class="about-masthead" id="portfolio-intro" aria-labelledby="portfolio-hero-heading">
+        <div class="about-masthead__ambient" aria-hidden="true"></div>
+        <div class="about-masthead__inner">
+            <div class="about-masthead__grid">
+                <div class="about-masthead__main">
+                    <nav class="about-masthead__crumb" aria-label="You are here">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li aria-current="page">Portfolio</li>
+                        </ol>
+                    </nav>
+
+                    <p class="about-masthead__eyebrow js-reveal">Selected work</p>
+
+                    <h1 class="about-masthead__title js-reveal" id="portfolio-hero-heading">
+                        <span class="about-masthead__title-pre">Recent deliveries,</span>
+                        <span class="about-masthead__title-em">crafted end-to-end</span>
+                        <span class="about-masthead__title-pre">by Flowdeck Labs.</span>
+                    </h1>
+
+                    <p class="about-masthead__lead js-reveal">
+                        Explore live websites, apps, platforms, and brand systems we&apos;ve shipped with clients—from Lagos to global teams—unified strategy, UX, and engineering.
+                    </p>
+                </div>
+
+                <aside class="about-masthead__rail" aria-label="Portfolio focus">
+                    <p class="about-masthead__rail-label">At a glance</p>
+                    <ul class="about-masthead__pillars js-reveal" role="list">
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Scope</span>
+                            <span class="about-masthead__pillar-value">Web, mobile, software</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Craft</span>
+                            <span class="about-masthead__pillar-value">UX, UI &amp; dev</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Brand</span>
+                            <span class="about-masthead__pillar-value">Identity &amp; visuals</span>
+                        </li>
+                    </ul>
+                </aside>
             </div>
-        </div>
-        
-        <div class="portfolio-header-container">
-            <!-- Section Header -->
-            <div class="portfolio-header">
-                <div class="dotted-line-left"></div>
-                <h2 class="portfolio-title">Recent Deliveries</h2>
-                <div class="dotted-line-right"></div>
+
+            <div class="about-masthead__actions js-reveal">
+                <a href="contact us.html" class="btn-primary about-masthead__btn">Start a project</a>
+                <a href="services.html" class="btn-secondary about-masthead__btn about-masthead__btn--ghost">Our services</a>
             </div>
-            
         </div>
     </section>
-    <section class="portfolio-section">    
+
+    <section class="portfolio-section" id="portfolio-work" aria-label="Project gallery">
         <div class="portfolio-container">
             <!-- Category Tabs -->
             <div class="portfolio-tabs">
@@ -96,7 +120,7 @@
                 <div class="portfolio-item" data-category="mobile">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80" alt="Mobile Calendar App">
+                            <img src="image/Grown Not Flown App.png" alt="Mobile Calendar App" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="/portfolio/calendar-app" class="view-project">View Project</a>
                             </div>
@@ -160,7 +184,7 @@
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Restaurant Branding">
+                            <img src="image/Brand Design.png" alt="Restaurant Branding" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="/portfolio/restaurant-branding" class="view-project">View Project</a>
                             </div>
@@ -176,7 +200,7 @@
                 <div class="portfolio-item" data-category="mobile">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=500&q=80" alt="Fitness Tracker App">
+                            <img src="image/Classes Bootcamps.jpg" alt="Fitness Tracker App" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="/portfolio/fitness-app" class="view-project">View Project</a>
                             </div>
@@ -192,7 +216,7 @@
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=80" alt="Food Photography">
+                            <img src="image/Service Sect 4.jpg" alt="Food Photography" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="/portfolio/food-photography" class="view-project">View Project</a>
                             </div>
@@ -224,7 +248,7 @@
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Food Menu Design">
+                            <img src="image/Whisk_3454187aabddd2e9bf54d62659eb8262dr 1.png" alt="Food Menu Design" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="/portfolio/menu-design" class="view-project">View Project</a>
                             </div>
@@ -240,7 +264,7 @@
                 <div class="portfolio-item" data-category="mobile">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=500&q=80" alt="Social Media App">
+                            <img src="image/crystal-cat-exchange.png" alt="Social Media App" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="/portfolio/social-app" class="view-project">View Project</a>
                             </div>
@@ -352,24 +376,18 @@
         </div>
     </section>
 
-    <!-- Contact CTA -->
-     <section class="contact-cta">
-        <div class="border-line top-line"></div>
-        
+    <section class="contact-cta about-page-cta" aria-labelledby="portfolio-cta-heading">
         <div class="cta-container">
             <div class="cta-content">
-                <div class="cta-text">
-                    <p class="cta-question">Have any question about us?</p>
-                    <p class="cta-message">Don't hesitate to contact us</p>
+                <div class="cta-text js-reveal">
+                    <p class="cta-question" id="portfolio-cta-heading">Have a product in mind?</p>
+                    <p class="cta-message">Tell us what you&apos;re building—we&apos;ll help you scope, design, and ship it with confidence.</p>
                 </div>
-                
-                <div class="cta-button-wrapper">
+                <div class="cta-button-wrapper js-reveal">
                     <a href="contact us.html" class="cta-button">Contact us</a>
                 </div>
             </div>
         </div>
-        
-        <div class="border-line bottom-line"></div>
     </section>
 
     <!--Footer-->
@@ -378,12 +396,14 @@
             <!-- Logo and Social Media Section -->
             <div class="footer-column">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="image/Flowdecklabs Footer Logo.png" alt="Flowdecklabs" width="95" height="95">
+                    <a href="index.html" class="footer-logo-link" aria-label="Flowdeck Labs home">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="image/Flowdecklabs Logo.svg" alt="" width="88" height="88" decoding="async">
+                            </div>
+                            <!-- <span class="logo-text">FLOWDECK LABS</span> -->
                         </div>
-                        <!-- <span class="logo-text">FLOWDECK LABS</span> -->
-                    </div>
+                    </a>
                     <div class="footer-paragraph">
                         Flowdeck Labs builds apps, software, and brands, delivering digital solutions and training that help businesses grow and talents thrive.
                     </div>
@@ -422,7 +442,7 @@
                     <h3 class="footer-heading">Discover</h3>
                     <ul class="footer-list">
                         <li><a href="about.html" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Institute</a></li>
+                        <li><a href="index.html#institute" class="footer-link">Institute</a></li>
                     </ul>
                 </div>
 
@@ -448,7 +468,7 @@
         <div class="footer-bottom">
             <div class="footer-container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">All rights reserved © 2025 Flowdeck Labs</p>
+                    <p class="copyright">All rights reserved © 2026 Flowdeck Labs</p>
                     <div class="footer-bottom-links">
                         <a href="#" class="footer-bottom-link">Privacy</a>
                         <a href="#" class="footer-bottom-link">Terms</a>
@@ -459,6 +479,7 @@
         </div>
     </footer>
 
+      <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
       <script src="script.js"></script>
 
 </body>

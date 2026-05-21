@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowdeck Labs</title>
+    <title>Services — Flowdeck Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="services-page">
     <!-- Sticky Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs">
+                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs" width="320" height="72" decoding="async">
             </div>
             
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#institute">Institute</a></li>
+                <li><a href="index.html#institute">Institute</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact us.html" class="contact-btn">Contact Us</a></li>
@@ -33,139 +36,168 @@
         </div>
     </nav>
 
-    <!-- Our Services Header Section -->
-    <section class="services-header-section">
-        <div class="services-header-container">
-            <h2 class="services-header-title">Our Services</h2>
-            <p class="services-header-description">
-                We create impactful digital solutions that grow brands and delight users, blending strategy, design, and technology.
-            </p>
+    <section class="about-masthead" id="services-intro" aria-labelledby="services-hero-heading">
+        <div class="about-masthead__ambient" aria-hidden="true"></div>
+        <div class="about-masthead__inner">
+            <div class="about-masthead__grid">
+                <div class="about-masthead__main">
+                    <nav class="about-masthead__crumb" aria-label="You are here">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li aria-current="page">Services</li>
+                        </ol>
+                    </nav>
+
+                    <p class="about-masthead__eyebrow js-reveal">What we deliver</p>
+
+                    <h1 class="about-masthead__title js-reveal" id="services-hero-heading">
+                        <span class="about-masthead__title-pre">From strategy to</span>
+                        <span class="about-masthead__title-em">launch-ready products</span>
+                        <span class="about-masthead__title-pre">that scale with you.</span>
+                    </h1>
+
+                    <p class="about-masthead__lead js-reveal">
+                        We blend research, UX, engineering, and training so your team ships web, mobile, and software experiences that look sharp, perform reliably, and grow your business.
+                    </p>
+                </div>
+
+                <aside class="about-masthead__rail" aria-label="How we work">
+                    <p class="about-masthead__rail-label">At a glance</p>
+                    <ul class="about-masthead__pillars js-reveal" role="list">
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Scope</span>
+                            <span class="about-masthead__pillar-value">Discovery → roadmap</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Build</span>
+                            <span class="about-masthead__pillar-value">Design + engineering</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Grow</span>
+                            <span class="about-masthead__pillar-value">Training &amp; brand</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div class="about-masthead__actions js-reveal">
+                <a href="contact us.html" class="btn-primary about-masthead__btn">Start a project</a>
+                <a href="portfolio.html" class="btn-secondary about-masthead__btn about-masthead__btn--ghost">View work</a>
+            </div>
         </div>
     </section>
 
-    <!-- Website Service Section 1 -->
-    <section class="service-detail-section">
-        <div class="service-detail-container">
-            <!-- Left Content -->
-            <div class="service-detail-content">
-                <h2 class="service-detail-title">Website</h2>
-                <p class="service-detail-description">
-                    At Flowdeck Labs, we build scalable web applications tailored to your business needs. From dashboards and customer portals to full SaaS platforms, we blend intuitive design with robust functionality for seamless digital experiences. Using modern no-code/low-code tools, we deliver fast, secure, and easy-to-maintain solutions that help startups and enterprises streamline operations, engage users, and drive growth.
-                </p>
-            </div>
-            
-            <!-- Right Image -->
-            <div class="service-detail-image">
-                <img src="image/Service Sect 1.jpg" alt="Web Design - Ideas and creativity">
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- Website Service Section 2 -->
-    <section class="service-detail-section">
-        <div class="service-detail-container">
-            <!-- Left Image -->
-            <div class="service-detail-image">
-                <img src="image/Service Sect 2.jpg" alt="Web Design - Ideas and creativity">
-            </div>
-            <!-- Right Content -->
-            <div class="service-detail-content">
-                <h2 class="service-detail-title">Software Development</h2>
-                <p class="service-detail-description">
-                    We create custom software that scales with your business. From internal tools and enterprise platforms to specialized applications, our team blends intuitive design with reliable engineering to deliver secure, high-performance products. Using agile methods and modern frameworks, we manage the full lifecycle, planning, development, testing, and deployment to ensure software that streamlines operations, supports growth, and adapts as your needs evolve. Contact us today to learn more about our services and how we can help your business grow.
-                </p>
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- Website Service Section 3 -->
-    <section class="service-detail-section">
-        <div class="service-detail-container">
-            <!-- Left Content -->
-            <div class="service-detail-content">
-                <h2 class="service-detail-title">Mobile Application</h2>
-                <p class="service-detail-description">
-                    We craft engaging mobile experiences that put your brand in the hands of users everywhere. From native iOS and Android builds to flexible cross-platform solutions, our team pairs elegant design with dependable functionality to create apps that delight and perform. We guide every stage concept, architecture, interface, testing, and release using modern tools to ensure speed, security, and effortless updates. Contact us today to discover how our mobile expertise can help your business grow.
-                </p>
-            </div>
-            
-            <!-- Right Image -->
-            <div class="service-detail-image">
-                <img src="image/Service Sect 3.png" alt="Web Design - Ideas and creativity">
-                <!-- <div class="image-badge">
-                    <span class="badge-views">1237</span>
-                    <span class="badge-tag">607 tags</span>
-                </div> -->
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- Website Service Section 4 -->
-    <section class="service-detail-section">
-        <div class="service-detail-container">
-            <!-- Left Image -->
-            <div class="service-detail-image">
-                <img src="image/Service Sect 4.jpg" alt="Web Design - Ideas and creativity">
-            </div>
-            <!-- Right Content -->
-            <div class="service-detail-content">
-                <h2 class="service-detail-title">Ecommerce Solution</h2>
-                <p class="service-detail-description">
-                    Online selling is now essential for growth in today’s market. Our e-commerce services help brands connect with customers and maximize sales opportunities. From custom storefront design to secure payment integration and seamless product management, we deliver flexible solutions tailored to your business goals. Our skilled team creates engaging shopping experiences that attract visitors, build trust, and turn browsers into buyers. Let us help you launch or upgrade your online store and capture more revenue.
+    <section class="about-section about-section--reverse" id="service-websites" aria-labelledby="svc-website-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--right">
+                <div class="about-media">
+                    <img src="image/Service Sect 1.jpg" alt="Website and web application design at Flowdeck Labs" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Websites &amp; platforms</p>
+                <h2 class="about-title js-reveal" id="svc-website-heading">Website</h2>
+                <p class="about-description js-reveal">
+                    At Flowdeck Labs, we build scalable web applications tailored to your business needs. From dashboards and customer portals to full SaaS platforms, we blend intuitive design with robust functionality for seamless digital experiences. Using modern workflows, we deliver fast, secure, and easy-to-maintain solutions that help startups and enterprises streamline operations, engage users, and drive growth.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Section 5 -->
-    <section class="cta-section">
-        <div class="cta-container-new">
+    <section class="about-section about-section--alt" id="service-software" aria-labelledby="svc-software-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/Service Sect 2.jpg" alt="Custom software development" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Engineering</p>
+                <h2 class="about-title js-reveal" id="svc-software-heading">Software development</h2>
+                <p class="about-description js-reveal">
+                    We create custom software that scales with your business. From internal tools and enterprise platforms to specialized applications, our team blends intuitive design with reliable engineering to deliver secure, high-performance products. Using agile methods and modern frameworks, we manage the full lifecycle—planning, development, testing, and deployment—so your software streamlines operations and adapts as you grow.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section about-section--reverse about-section--alt" id="service-mobile" aria-labelledby="svc-mobile-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--right">
+                <div class="about-media">
+                    <img src="image/Service Sect 3.png" alt="Mobile application design and development" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Mobile</p>
+                <h2 class="about-title js-reveal" id="svc-mobile-heading">Mobile application</h2>
+                <p class="about-description js-reveal">
+                    We craft engaging mobile experiences that put your brand in users&apos; hands everywhere. From native iOS and Android builds to flexible cross-platform solutions, we pair elegant design with dependable functionality. We guide concept, architecture, UI, testing, and release with modern tooling so your app stays fast, secure, and easy to evolve.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="service-ecommerce" aria-labelledby="svc-ecom-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/Service Sect 4.jpg" alt="E-commerce storefront and online selling" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Commerce</p>
+                <h2 class="about-title js-reveal" id="svc-ecom-heading">E-commerce</h2>
+                <p class="about-description js-reveal">
+                    Online selling is essential for growth. Our e-commerce work helps brands connect with customers and maximize revenue—from custom storefront design to secure payments and product management. We build shopping experiences that attract visitors, build trust, and turn browsers into buyers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cta about-page-cta" aria-labelledby="services-cta-heading">
+        <div class="cta-container">
             <div class="cta-content">
-                <h2 class="cta-title">Let's Create Something Amazing Together !</h2>
-                <a href="/schedule-call" class="cta-button">
-                    <span>Schedule a call</span>
-                    <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 16.92V19.92C22 20.4728 21.5523 20.92 21 20.92H18C8.61116 20.92 1 13.3088 1 3.92C1 3.36772 1.44772 2.92 2 2.92H5C5.55228 2.92 6 3.36772 6 3.92V7.42C6 7.97229 5.55228 8.42 5 8.42H4C4 14.4932 8.92678 19.42 15 19.42V18.42C15 17.8677 15.4477 17.42 16 17.42H19.5C20.0523 17.42 20.5 17.8677 20.5 18.42V19.92" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
+                <div class="cta-text js-reveal">
+                    <p class="cta-question" id="services-cta-heading">Let&apos;s create something amazing together</p>
+                    <p class="cta-message">Tell us what you&apos;re building—we&apos;ll help you design, ship, and scale it with confidence.</p>
+                </div>
+                <div class="cta-button-wrapper js-reveal">
+                    <a href="contact us.html" class="cta-button">Schedule a call</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Website Service Section 6 -->
-    <section class="service-detail-section">
-        <div class="service-detail-container">
-            <!-- Left Content -->
-            <div class="service-detail-content">
-                <h2 class="service-detail-title">Classes/ Bootcamps</h2>
-                <p class="service-detail-description">
-                    Ready to build a career in tech? Our hands-on training programs are designed to turn curiosity into real skills. From product design and management to web and mobile development, each course blends practical projects with expert mentorship so you learn by doing. Whether you’re just starting out or sharpening existing skills, our bootcamps provide the tools, guidance, and community you need to succeed. Enroll today and start creating the digital products of tomorrow.
+    <section class="about-section about-section--reverse about-section--alt" id="service-training" aria-labelledby="svc-training-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--right">
+                <div class="about-media">
+                    <img src="image/Classes Bootcamps.jpg" alt="Classes and bootcamps at Flowdeck Labs" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Academy</p>
+                <h2 class="about-title js-reveal" id="svc-training-heading">Classes &amp; bootcamps</h2>
+                <p class="about-description js-reveal">
+                    Ready to build a career in tech? Our hands-on training turns curiosity into real skills. From product design and management to web and mobile development, each course blends practical projects with expert mentorship. Whether you&apos;re starting out or leveling up, our bootcamps give you the tools, guidance, and community to succeed.
                 </p>
             </div>
-            
-            <!-- Right Image -->
-            <div class="service-detail-image">
-                <img src="image/Classes Bootcamps.jpg" alt="Classes/Bootcamp">
-            </div>
         </div>
-        
     </section>
 
-    <!-- Website Service Section 7 -->
-    <section class="service-detail-section">
-        <div class="service-detail-container">
-            <!-- Left Image -->
-            <div class="service-detail-image">
-                <img src="image/Brand Design.png" alt="Brand Design">
-            </div>
-            <!-- Right Content -->
-            <div class="service-detail-content">
-                <h2 class="service-detail-title">Brand Design</h2>
-                <p class="service-detail-description">
-                    A strong brand is more than a logo, it’s the story your audience remembers. We create visual identities that capture your mission and connect with customers across every touchpoint. From logos and color systems to typography, packaging, and brand guidelines, our team blends strategy with creativity to craft designs that inspire trust and recognition. Contact us today to see how our brand design expertise can help your business stand out and grow.
+    <section class="about-section about-section--alt" id="service-brand" aria-labelledby="svc-brand-heading">
+        <div class="about-container">
+            <figure class="about-figure js-reveal js-reveal--left">
+                <div class="about-media">
+                    <img src="image/Brand Design.png" alt="Brand design and visual identity" loading="lazy" width="960" height="720">
+                </div>
+            </figure>
+            <div class="about-content">
+                <p class="about-eyebrow js-reveal">Brand</p>
+                <h2 class="about-title js-reveal" id="svc-brand-heading">Brand design</h2>
+                <p class="about-description js-reveal">
+                    A strong brand is more than a logo—it&apos;s the story your audience remembers. We create visual identities that capture your mission across every touchpoint: logos, color systems, typography, and guidelines that inspire trust and recognition.
                 </p>
             </div>
         </div>
@@ -177,12 +209,14 @@
             <!-- Logo and Social Media Section -->
             <div class="footer-column">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="image/Flowdecklabs Footer Logo.png" alt="Flowdecklabs" width="95" height="95">
+                    <a href="index.html" class="footer-logo-link" aria-label="Flowdeck Labs home">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="image/Flowdecklabs Logo.svg" alt="" width="88" height="88" decoding="async">
+                            </div>
+                            <!-- <span class="logo-text">FLOWDECK LABS</span> -->
                         </div>
-                        <!-- <span class="logo-text">FLOWDECK LABS</span> -->
-                    </div>
+                    </a>
                     <div class="footer-paragraph">
                         Flowdeck Labs builds apps, software, and brands, delivering digital solutions and training that help businesses grow and talents thrive.
                     </div>
@@ -221,7 +255,7 @@
                     <h3 class="footer-heading">Discover</h3>
                     <ul class="footer-list">
                         <li><a href="about.html" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Institute</a></li>
+                        <li><a href="index.html#institute" class="footer-link">Institute</a></li>
                     </ul>
                 </div>
 
@@ -247,7 +281,7 @@
         <div class="footer-bottom">
             <div class="footer-container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">All rights reserved © 2025 Flowdeck Labs</p>
+                    <p class="copyright">All rights reserved © 2026 Flowdeck Labs</p>
                     <div class="footer-bottom-links">
                         <a href="#" class="footer-bottom-link">Privacy</a>
                         <a href="#" class="footer-bottom-link">Terms</a>
@@ -258,6 +292,7 @@
         </div>
     </footer>
 
+      <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
       <script src="script.js"></script>
 
 </body>

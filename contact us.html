@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowdeck Labs</title>
+    <title>Contact — Flowdeck Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="contact-page">
     <!-- Sticky Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs">
+                <img src="image/Flowdecklabs Logo.svg" alt="Flowdecklabs" width="320" height="72" decoding="async">
             </div>
             
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#institute">Institute</a></li>
+                <li><a href="index.html#institute">Institute</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact us.html" class="contact-btn">Contact Us</a></li>
@@ -33,10 +36,54 @@
         </div>
     </nav>
 
-    <!-- Contact Us Header Section -->
-    <section class="services-header-section">
-        <div class="services-header-container">
-            <h2 class="services-header-title">Contact Us</h2>   
+    <section class="about-masthead" id="contact-intro" aria-labelledby="contact-hero-heading">
+        <div class="about-masthead__ambient" aria-hidden="true"></div>
+        <div class="about-masthead__inner">
+            <div class="about-masthead__grid">
+                <div class="about-masthead__main">
+                    <nav class="about-masthead__crumb" aria-label="You are here">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+
+                    <p class="about-masthead__eyebrow js-reveal">Let&apos;s talk</p>
+
+                    <h1 class="about-masthead__title js-reveal" id="contact-hero-heading">
+                        <span class="about-masthead__title-pre">Tell us about your</span>
+                        <span class="about-masthead__title-em">next product move.</span>
+                        <span class="about-masthead__title-pre">We&apos;ll respond quickly.</span>
+                    </h1>
+
+                    <p class="about-masthead__lead js-reveal">
+                        Share your goals, timeline, and budget—we&apos;ll follow up with a clear path forward, whether you need design, development, training, or a full product team.
+                    </p>
+                </div>
+
+                <aside class="about-masthead__rail" aria-label="Contact snapshot">
+                    <p class="about-masthead__rail-label">Reach us</p>
+                    <ul class="about-masthead__pillars js-reveal" role="list">
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Email</span>
+                            <span class="about-masthead__pillar-value">Flowdecklabs@gmail.com</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Location</span>
+                            <span class="about-masthead__pillar-value">Lagos, Nigeria</span>
+                        </li>
+                        <li class="about-masthead__pillar">
+                            <span class="about-masthead__pillar-kicker">Hours</span>
+                            <span class="about-masthead__pillar-value">Weekdays · 9–6 WAT</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div class="about-masthead__actions js-reveal">
+                <a href="#contact-form" class="btn-primary about-masthead__btn">Send a message</a>
+                <a href="portfolio.html" class="btn-secondary about-masthead__btn about-masthead__btn--ghost">See portfolio</a>
+            </div>
         </div>
     </section>
 
@@ -44,152 +91,188 @@
     <section class="contact-cards-section">
         <div class="contact-cards-container">
             <!-- Email Card -->
-            <div class="contact-card">
-                <div class="contact-icon">
+            <div class="contact-card js-reveal">
+                <div class="contact-icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h3 class="contact-title">Email Us</h3>
-                <p class="contact-detail">Flowdecklabs@gmail.com</p>
+                <h3 class="contact-title">Email us</h3>
+                <p class="contact-detail">
+                    <a href="mailto:Flowdecklabs@gmail.com">Flowdecklabs@gmail.com</a>
+                </p>
             </div>
             
             <!-- Location Card -->
-            <div class="contact-card">
-                <div class="contact-icon">
+            <div class="contact-card js-reveal">
+                <div class="contact-icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h3 class="contact-title">Visit Us</h3>
+                <h3 class="contact-title">Visit us</h3>
                 <p class="contact-detail">1004, Ibeju Lekki,<br>Lagos, Nigeria</p>
             </div>
             
             <!-- Phone Card -->
-            <div class="contact-card">
-                <div class="contact-icon">
+            <div class="contact-card js-reveal">
+                <div class="contact-icon" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h3 class="contact-title">Call Us</h3>
-                <p class="contact-detail">+2347087601233 /<br>+2347060499623</p>
+                <h3 class="contact-title">Call us</h3>
+                <p class="contact-detail contact-detail--phones">
+                    <a href="tel:+2347087601233">+234&nbsp;708&nbsp;760&nbsp;1233</a>
+                    <span class="contact-detail-sep">·</span>
+                    <a href="tel:+2347060499623">+234&nbsp;706&nbsp;049&nbsp;9623</a>
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact-form" aria-labelledby="contact-form-heading">
         <div class="contact-container">
             <div class="contact-header">
-                <h2 class="contact-title">Get In Touch With Us</h2>
-                <p class="contact-subtitle">We are always available to respond to your message</p>
+                <h2 class="contact-title js-reveal" id="contact-form-heading">Get in touch with us</h2>
+                <p class="contact-subtitle js-reveal">We reply on weekdays within one business day</p>
             </div>
 
             <div class="contact-content">
-                <div class="contact-image">
-                    <img src="image/Contact Us.png" alt="Flowdeck Labs Office">
+                <div class="contact-image js-reveal js-reveal--left">
+                    <img src="image/Contact Us.png" alt="Flowdeck Labs office and reception" loading="lazy" width="800" height="1000">
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <h3 class="form-title">Fill in your enquiries</h3>
-                    <p class="form-subtitle">Send Us an email using the contact form below</p>
+                <div class="contact-form-wrapper js-reveal js-reveal--right">
+                    <div class="form-intro">
+                        <h3 class="form-title">Project details</h3>
+                        <p class="form-subtitle">Share a brief note—we&apos;ll follow up by email.</p>
+                    </div>
 
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
+                                <label class="contact-field-label" for="firstName">First name <span aria-hidden="true">*</span></label>
                                 <input 
                                     type="text" 
                                     id="firstName" 
                                     name="firstName" 
-                                    placeholder="John" 
+                                    placeholder="e.g. Ada" 
                                     required
                                     class="form-input"
+                                    autocomplete="given-name"
                                 >
                             </div>
                             <div class="form-group">
+                                <label class="contact-field-label" for="lastName">Last name <span aria-hidden="true">*</span></label>
                                 <input 
                                     type="text" 
                                     id="lastName" 
                                     name="lastName" 
-                                    placeholder="Last Name*" 
+                                    placeholder="e.g. Okonkwo" 
                                     required
                                     class="form-input"
+                                    autocomplete="family-name"
                                 >
                             </div>
                         </div>
 
                         <div class="form-group">
+                            <label class="contact-field-label" for="phone">Phone <span aria-hidden="true">*</span></label>
                             <input 
                                 type="tel" 
                                 id="phone" 
                                 name="phone" 
-                                placeholder="Phone Number*" 
+                                placeholder="+234 …" 
                                 required
                                 class="form-input"
+                                autocomplete="tel"
                             >
                         </div>
 
                         <div class="form-group">
+                            <label class="contact-field-label" for="email">Email <span aria-hidden="true">*</span></label>
                             <input 
                                 type="email" 
                                 id="email" 
                                 name="email" 
-                                placeholder="Email*" 
+                                placeholder="you@company.com" 
                                 required
                                 class="form-input"
+                                autocomplete="email"
                             >
                         </div>
 
                         <div class="form-group">
+                            <label class="contact-field-label" for="message">Message <span aria-hidden="true">*</span></label>
                             <textarea 
                                 id="message" 
                                 name="message" 
-                                placeholder="Your message..." 
+                                placeholder="Goals, timeline, and how we can help" 
                                 rows="5"
                                 required
                                 class="form-textarea"
                             ></textarea>
                         </div>
 
-                        <button type="submit" class="submit-button">Send Message</button>
+                        <button type="submit" class="submit-button">Send message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Google Map -->
-    <section class="location-section">
+    <!-- Office map -->
+    <section class="location-section" aria-labelledby="location-heading">
         <div class="location-container">
-            <div class="map-wrapper">
-                <div class="map-embed">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3871824447205!2d3.9166!3d7.4394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjYnMjEuOCJOIDPCsDU0JzU5LjgiRQ!5e0!3m2!1sen!2sng!4v1234567890"
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Flowdeck Labs Location Map">
-                    </iframe>
+            <header class="location-section__intro">
+                <p class="location-section__eyebrow js-reveal">Visit</p>
+                <h2 class="location-section__title js-reveal" id="location-heading">Find our studio</h2>
+                <p class="location-section__lead js-reveal">1004 Ibeju Lekki · Lagos · Weekdays by appointment when you book ahead</p>
+            </header>
+
+            <article class="location-map-card js-reveal" aria-label="Studio map and directions">
+                <div class="location-map-card__viewport">
+                    <div class="map-embed map-embed--contact" role="presentation">
+                        <iframe
+                            src="https://maps.google.com/maps?q=1004+Ibeju+Lekki%2C+Lekki%2C+Lagos%2C+Nigeria&amp;z=14&amp;t=m&amp;ie=UTF8&amp;iwloc=near&amp;output=embed"
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Flowdeck Labs — Studio location near Ibeju Lekki">
+                        </iframe>
+                    </div>
                 </div>
-                <div class="location-details">
-                    <a href="https://www.google.com/maps/dir//Harmony+Estate+Elewuro+Akobo+Ibadan" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="directions-button">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
+                <div class="location-map-card__footer">
+                    <div class="location-map-card__meta">
+                        <div class="location-map-card__pin" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 21s7-4.818 7-11a7 7 0 1 0-14 0c0 6.182 7 11 7 11Z"></path>
+                                <circle cx="12" cy="10" r="2.5" fill="currentColor" stroke="none"></circle>
+                            </svg>
+                        </div>
+                        <div class="location-map-card__text">
+                            <span class="location-map-card__name">Flowdeck Labs · Lekki</span>
+                            <span class="location-map-card__addr">1004, Ibeju Lekki, Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                    <a
+                        href="https://www.google.com/maps/dir/?api=1&amp;destination=1004+Ibeju+Lekki,+Lagos,+Nigeria"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="location-map-card__cta">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
                         </svg>
-                        Get Directions
+                        Open in Google Maps
                     </a>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -199,12 +282,14 @@
             <!-- Logo and Social Media Section -->
             <div class="footer-column">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="image/Flowdecklabs Footer Logo.png" alt="Flowdecklabs" width="95" height="95">
+                    <a href="index.html" class="footer-logo-link" aria-label="Flowdeck Labs home">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="image/Flowdecklabs Logo.svg" alt="" width="88" height="88" decoding="async">
+                            </div>
+                            <!-- <span class="logo-text">FLOWDECK LABS</span> -->
                         </div>
-                        <!-- <span class="logo-text">FLOWDECK LABS</span> -->
-                    </div>
+                    </a>
                     <div class="footer-paragraph">
                         Flowdeck Labs builds apps, software, and brands, delivering digital solutions and training that help businesses grow and talents thrive.
                     </div>
@@ -243,7 +328,7 @@
                     <h3 class="footer-heading">Discover</h3>
                     <ul class="footer-list">
                         <li><a href="about.html" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Institute</a></li>
+                        <li><a href="index.html#institute" class="footer-link">Institute</a></li>
                     </ul>
                 </div>
 
@@ -269,7 +354,7 @@
         <div class="footer-bottom">
             <div class="footer-container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">All rights reserved © 2025 Flowdeck Labs</p>
+                    <p class="copyright">All rights reserved © 2026 Flowdeck Labs</p>
                     <div class="footer-bottom-links">
                         <a href="#" class="footer-bottom-link">Privacy</a>
                         <a href="#" class="footer-bottom-link">Terms</a>
@@ -280,6 +365,7 @@
         </div>
     </footer>
 
+      <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
       <script src="script.js"></script>
 
 </body>
